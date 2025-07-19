@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -14,20 +15,20 @@ export default function Hero() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <a 
-            href="#services" 
+          <Link 
+            href="/services" 
             className="btn btn-primary inline-flex items-center gap-3 text-lg px-8 py-4"
           >
             Explore Our Services
             <ArrowRight className="w-5 h-5" />
-          </a>
+          </Link>
           
-          <a 
-            href="#case-studies" 
+          <Link 
+            href="/case-studies" 
             className="btn btn-secondary text-lg px-8 py-4"
           >
             View Case Studies
-          </a>
+          </Link>
         </div>
         
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
