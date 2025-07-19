@@ -223,7 +223,7 @@ export async function POST(request: NextRequest) {
 
     // Send notification email to admin
     const adminEmailResult = await resend.emails.send({
-      from: 'Website Contact <onboarding@resend.dev>',
+      from: 'Website Contact <tony@cosmicjs.com>',
       to: ['tony@cosmicjs.com'],
       subject: `🎯 New Contact Form Submission from ${name}`,
       html: AdminEmailTemplate({
@@ -251,7 +251,7 @@ export async function POST(request: NextRequest) {
 
     // Send confirmation email to user
     const confirmationEmailResult = await resend.emails.send({
-      from: 'Professional Services Team <onboarding@resend.dev>',
+      from: 'Professional Services Team <tony@cosmicjs.com>',
       to: [email],
       subject: `✅ Thank you for contacting us, ${name}!`,
       html: ConfirmationEmailTemplate({ name }),
