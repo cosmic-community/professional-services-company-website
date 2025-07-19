@@ -1,4 +1,4 @@
-# Professional Services Company Website
+# LFG Cosmic
 
 ![Company Website Preview](https://imgix.cosmicjs.com/8d5400f0-64e0-11f0-a051-23c10f41277a-photo-1556742049-0cfed4f6a45d-1752957601453.jpg?w=1200&h=300&fit=crop&auto=format,compress)
 
@@ -94,54 +94,3 @@ const services = await cosmic.objects
 ```
 
 ### Fetching Team Members
-```typescript
-const teamMembers = await cosmic.objects
-  .find({ type: 'team-members' })
-  .props(['id', 'title', 'slug', 'metadata'])
-  .depth(1)
-```
-
-### Fetching Case Studies
-```typescript
-const caseStudies = await cosmic.objects
-  .find({ type: 'case-studies' })
-  .props(['id', 'title', 'slug', 'metadata'])
-  .depth(1)
-```
-
-## Cosmic CMS Integration
-
-This website integrates with your Cosmic CMS bucket to manage:
-
-- **Services** - Service offerings with descriptions, pricing, and key features
-- **Team Members** - Staff profiles with photos, bios, and contact information
-- **Case Studies** - Project showcases with challenges, solutions, and results
-- **Testimonials** - Client feedback with ratings and company information
-
-All content is fetched dynamically from your Cosmic bucket using the [Cosmic SDK](https://www.cosmicjs.com/docs).
-
-## Deployment Options
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Add your environment variables in the Vercel dashboard
-4. Deploy automatically on every push
-
-### Netlify
-
-1. Push your code to GitHub
-2. Connect your repository to [Netlify](https://netlify.com)
-3. Set build command to `bun run build`
-4. Add your environment variables
-5. Deploy
-
-### Environment Variables for Production
-
-Set these variables in your hosting platform's dashboard:
-
-- `COSMIC_BUCKET_SLUG` - Your Cosmic bucket slug
-- `COSMIC_READ_KEY` - Your Cosmic read key
-- `COSMIC_WRITE_KEY` - Your Cosmic write key (if needed for forms)
-<!-- README_END -->
