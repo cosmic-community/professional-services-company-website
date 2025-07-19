@@ -22,19 +22,19 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="/services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Services
             </a>
-            <a href="#team" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="/team" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Team
             </a>
-            <a href="#case-studies" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="/case-studies" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Case Studies
             </a>
-            <a href="#testimonials" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="/testimonials" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Testimonials
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Contact
             </a>
           </nav>
@@ -42,7 +42,7 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex">
             <a
-              href="#contact"
+              href="/contact"
               className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
               Get Started
@@ -89,35 +89,35 @@ export default function Header() {
           <div className="md:hidden border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a
-                href="#services"
+                href="/services"
                 className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </a>
               <a
-                href="#team"
+                href="/team"
                 className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Team
               </a>
               <a
-                href="#case-studies"
+                href="/case-studies"
                 className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Case Studies
               </a>
               <a
-                href="#testimonials"
+                href="/testimonials"
                 className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Testimonials
               </a>
               <a
-                href="#contact"
+                href="/contact"
                 className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -125,7 +125,7 @@ export default function Header() {
               </a>
               <div className="px-3 pt-2">
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="block w-full text-center bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
