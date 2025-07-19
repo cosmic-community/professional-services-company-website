@@ -1,4 +1,4 @@
-# Professional Services
+# LFG Cosmic
 
 ![Company Website Preview](https://imgix.cosmicjs.com/8d5400f0-64e0-11f0-a051-23c10f41277a-photo-1556742049-0cfed4f6a45d-1752957601453.jpg?w=1200&h=300&fit=crop&auto=format,compress)
 
@@ -104,21 +104,3 @@ const teamMembers = await cosmic.objects
 ```
 
 ### Fetching Case Studies
-```typescript
-import { cosmic } from '@/lib/cosmic'
-
-const caseStudies = await cosmic.objects
-  .find({ type: 'case-studies' })
-  .props(['id', 'title', 'slug', 'metadata'])
-  .depth(1)
-```
-
-### Fetching Testimonials
-```typescript
-import { cosmic } from '@/lib/cosmic'
-
-const testimonials = await cosmic.objects
-  .find({ type: 'testimonials' })
-  .props(['id', 'title', 'slug', 'metadata'])
-  .depth(1)
-```
