@@ -1,4 +1,6 @@
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
@@ -36,10 +38,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Web Development</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Digital Marketing</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Business Consulting</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">UI/UX Design</a></li>
+              <li><a href="/services" className="hover:text-white transition-colors duration-300">Web Development</a></li>
+              <li><a href="/services" className="hover:text-white transition-colors duration-300">Digital Marketing</a></li>
+              <li><a href="/services" className="hover:text-white transition-colors duration-300">Business Consulting</a></li>
             </ul>
           </div>
           
@@ -67,7 +68,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Professional Services Company. All rights reserved.</p>
+          <p>&copy; {currentYear} Professional Services Company. All rights reserved.</p>
         </div>
       </div>
     </footer>
