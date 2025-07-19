@@ -94,3 +94,30 @@ const services = await cosmic.objects
 ```
 
 ### Fetching Team Members
+```typescript
+import { cosmic } from '@/lib/cosmic'
+
+const teamMembers = await cosmic.objects
+  .find({ type: 'team-members' })
+  .props(['id', 'title', 'slug', 'metadata'])
+  .depth(1)
+```
+
+### Fetching Case Studies
+```typescript
+import { cosmic } from '@/lib/cosmic'
+
+const caseStudies = await cosmic.objects
+  .find({ type: 'case-studies' })
+  .props(['id', 'title', 'slug', 'metadata'])
+  .depth(1)
+```
+
+### Fetching Testimonials
+```typescript
+import { cosmic } from '@/lib/cosmic'
+
+const testimonials = await cosmic.objects
+  .find({ type: 'testimonials' })
+  .props(['id', 'title', 'slug', 'metadata'])
+  .depth(1)
