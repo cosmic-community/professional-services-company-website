@@ -1,4 +1,4 @@
-# Professional Services Website
+# LFG Cosmic
 
 ![Company Website Preview](https://imgix.cosmicjs.com/8d5400f0-64e0-11f0-a051-23c10f41277a-photo-1556742049-0cfed4f6a45d-1752957601453.jpg?w=1200&h=300&fit=crop&auto=format,compress)
 
